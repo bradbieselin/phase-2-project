@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom"
 import SubmitForm from './SubmitForm';
+import SubmissionsContainer from './SubmissionsContainer';
 
 const Challenge = () => {
     const [challenge, setChallenge] = useState([]);
@@ -12,11 +13,9 @@ const Challenge = () => {
         .then(setChallenge)
     }, [challengeType]);
 
-
-
     return (
         <div>
-            {challenge.map(item => console.log(item) )}
+            {challenge.map(selectedChallenge => <SubmissionsContainer challenge={selectedChallenge} key={selectedChallenge.challenge} /> )}
             <SubmitForm challengeType={challengeType} />
         </div>
     );
