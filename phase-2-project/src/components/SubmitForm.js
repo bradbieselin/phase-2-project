@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CardContainer = () => {
+const SubmitForm = ({ challengeType }) => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const CardContainer = () => {
     );
 };
 
-export default CardContainer;
+export default SubmitForm;
