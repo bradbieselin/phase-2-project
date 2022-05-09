@@ -13,11 +13,9 @@ const Challenge = () => {
         .then(setChallenge)
     }, [challengeType]);
 
-
-
     return (
         <div>
-            {challenge.map(selectedChallenge => <SubmissionsContainer challenge={selectedChallenge} key={selectedChallenge.description} /> )}
+            {challenge.map(selectedChallenge => <SubmissionsContainer challenge={selectedChallenge} key={selectedChallenge.challenge} /> )}
             <SubmitForm challengeType={challengeType} />
         </div>
     );
