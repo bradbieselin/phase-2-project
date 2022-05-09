@@ -1,9 +1,12 @@
-import CardContainer from './components/CardContainer';
+import React from 'react';
+import CardContainer from './CardContainer';
 
 function App() {
   return (
     <div className="App">
-      <header>header</header>
+      <header>
+        
+      </header>
       <CardContainer />
     </div>
   );
