@@ -13,6 +13,7 @@
             "votingDeadline": "05-13-2022",
             "submissions": [
                 {
+                    "votes": 0,
                     "photographer": "Brody Losh",
                     "image": "https://triptins.com/wp-content/uploads/2021/11/Brooklyn-Bridge-Sunset.jpeg",
                     "caption": "Hello Brooklyn!"

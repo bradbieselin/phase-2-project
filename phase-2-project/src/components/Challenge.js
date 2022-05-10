@@ -13,6 +13,12 @@ const Challenge = () => {
         .then(setChallenge)
     }, [challengeType]);
 
+    function handleVotes() {
+        fetch(`http://localhost:3000/${challengeType}`, {
+            
+        })
+    }
+
     return (
         <div>
             {challenge.map(selectedChallenge => <SubmissionsContainer challenge={selectedChallenge} key={selectedChallenge.challenge} /> )}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components'
 
 const Image = styled.img`
@@ -8,11 +8,18 @@ const Image = styled.img`
 `
 
 const SubmissionCard = ({ submission }) => {
+    const [votes, setVotes] = useState(submission.votes)
+
+    function handleClick() {
+        setVotes(votes => votes + 1);
+    }
+
     return (
         <div>
             <Image src={submission.image} alt={submission.caption} />
             <h2>{submission.photographer}</h2>
             <h3>{submission.caption}</h3>
+            <button onClick={handleClick}>Votes: {votes}</button>
         </div>
     );
 };

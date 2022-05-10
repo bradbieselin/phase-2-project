@@ -14,7 +14,7 @@ const ChallengeTitle = styled.h1`
     `
 
 const SubmissionsContainer = ({ challenge }) => {
-    // console.log(challenge)
+    
     return (
         <div>
             <ChallengeTitle>{challenge.challenge}</ChallengeTitle>
